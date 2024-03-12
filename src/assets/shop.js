@@ -81,4 +81,4 @@ export const flowersShop=[
         soldOut: false,
         price:4.03
     },
-]
+];

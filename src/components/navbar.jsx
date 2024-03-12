@@ -1,10 +1,18 @@
 "use client"
 import Link from "next/link";
 import { items } from "@/assets/shop";
+import { useCart } from "@/app/context/cartProvider";
 
 
 
 function Navbar() {
+
+    const { cart } = useCart();
+
+    // Calcula la cantidad total de artículos en el carrito
+    const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+
+
     return (<>
         <div className="flex gap-x-20 pt-9 pl-10 shadow shadow-lg shadow-slate-500 w-full justify-between items-center">
         <div className="flex gap-x-20">
@@ -33,7 +41,12 @@ function Navbar() {
                 </select>
             </div>
             </div>
-                <i className='bx bx-cart text-3xl pr-8'></i>
+           <div className="flex items-center">
+           <i className='bx bx-cart text-xl pr-2'></i>
+           <p className="pr-4"> {totalItems}</p>
+           </div>
+              
+         
            
         </div>
 

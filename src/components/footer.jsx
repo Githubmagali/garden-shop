@@ -9,7 +9,7 @@ function Footer() {
 
                 </div>
                 <div className="grid-cols-1">
-                    <p className="text-gray-600 text-sm"><i class='bx bx-map text-xl pr-4'></i>Address 1234, Bs As Argentina</p>
+                    <p className="text-gray-600 text-sm"><i className='bx bx-map text-xl pr-4'></i>Address 1234, Bs As Argentina</p>
 
                 </div>
                 <div className="grid-cols-1">
