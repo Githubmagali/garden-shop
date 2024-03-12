@@ -22,7 +22,7 @@ function Navbar() {
                         }
                     }}
                 >
-                    <option value="" disabled >
+                    <option value="" >
                         Shop
                     </option>
                     {items.map((item) => (
