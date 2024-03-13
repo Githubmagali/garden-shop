@@ -2,13 +2,17 @@
 import { flowersShop } from "@/assets/shop"
 import { useCart } from "@/app/context/cartProvider"
 import NavbarCart from "@/components/cart"
+import Link from "next/link"
 
 function Plants() {
 
     const {cart, addToCart, removeFromCart, getItemQuantity } = useCart()
 
-    return (
-        <div className="lg:grid lg:grid-cols-4 pt-20 pb-10 ">
+    return (<>
+    <div className="pt-8 pl-3">
+    <Link href="/shop/fertileLand" className="underline  decoration-solid">Fertile section <i class='bx bx-right-arrow-alt'></i></Link>
+    </div>
+        <div className="lg:grid lg:grid-cols-4 pt-20 pb-10 fade-in ">
 
             {flowersShop.map((item) => (
                 
@@ -21,9 +25,9 @@ function Plants() {
                         <p className="text-gray-400"> ${item.price}</p>
                         {getItemQuantity(item.id) > 0 ? (
                             <div div className="flex gap-x-3 items-center justify-center">
-                                <button onClick={() => addToCart(item)}>+</button>
+                                <button onClick={() => addToCart(item)} className="bg-gray-300 rounded rounded-full px-2">+</button>
                                 <p className="text-xs text-center">{getItemQuantity(item.id)}</p>
-                                <button onClick={() => removeFromCart(item.id)}>-</button>
+                                <button onClick={() => removeFromCart(item.id)}  className="bg-gray-200 rounded rounded-full px-2">-</button>
                             </div>
                         ) : (
                             <button onClick={() => addToCart(item)}
@@ -36,7 +40,7 @@ function Plants() {
             ))}
               {cart.length > 0 &&  <NavbarCart />}
         </div >
-    )
+   </> )
 }
 
 export default Plants

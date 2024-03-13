@@ -2,7 +2,7 @@ import { itemsAbout } from "@/assets/about";
 
 function About() {
     return (
-        <div className="grid grid-cols-4 pt-40 pl-5 pb-40">
+        <div className="grid grid-cols-4 pt-40 pl-5 pb-40 fade-in">
             {itemsAbout.map((item, index) => (
                 <div className="relative grid-cols-1 p-5" key={index}>
                     <div className="relative">

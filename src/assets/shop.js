@@ -82,3 +82,50 @@ export const flowersShop=[
         price:4.03
     },
 ];
+
+export const fertileShop=[
+    {
+        id:1,
+        name:"Flowering full",
+        img:"/fertile-flowering-full.png",
+        soldOut:false,
+        price:9.33
+    },
+    {
+        id:2,
+        name:"Humus",
+        img:"/fertile-humus.png",
+        soldOut:false,
+        price:5.33
+    },
+    {
+        id:3,
+        name:"Potassium choride",
+        img:"/fertile-potassium-chloride.png",
+        soldOut:false,
+        price:2.33
+    },
+    {
+        id:4,
+        name:"Potassium Nitrate",
+        img:"/fertile-potassium-nitrate.png",
+        soldOut:false,
+        price:2.33
+    },
+    {
+        id:5,
+        name:"Seaweed extract",
+        img:"/fertile-seaweed-extract.png",
+        soldOut:false,
+        price:9.99
+    },
+    {
+        id:6,
+        name:"Turba",
+        img:"/fertile-turba.png",
+        soldOut:false,
+        price:8.33
+    }
+   
+
+]
