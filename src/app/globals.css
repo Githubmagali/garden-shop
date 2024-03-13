@@ -19,3 +19,10 @@
         opacity: 1;
     }
   }
+
+  .fake-dark-mode {
+    color: #fff; 
+    background-color: #010101; 
+  
+  }
+  
