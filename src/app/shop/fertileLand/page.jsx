@@ -9,12 +9,12 @@ function FertileLand() {
     const {cart, addToCart, removeFromCart, getItemQuantity } = useCart()
 
     return (<>
-       <div className="pt-8 pl-3">
-    <Link href="/shop/plants" className="underline  decoration-solid">Plants section <i class='bx bx-right-arrow-alt'></i></Link>
+     <div className="flex justify-between pt-8 pl-3">
+    <Link href="/shop/plants" className="underline  decoration-solid"><i class='bx bx-left-arrow-alt'></i>Plants</Link>
+    <Link href="/shop/trees" className="underline  decoration-solid">Trees<i class='bx bx-right-arrow-alt'></i></Link>
     </div>
+    
         <div className="lg:grid lg:grid-cols-4 pt-20 pb-10 fade-in ">
-          
-
             {fertileShop.map((item) => (
                 
 

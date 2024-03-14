@@ -9,7 +9,8 @@ function Plants() {
     const {cart, addToCart, removeFromCart, getItemQuantity } = useCart()
 
     return (<>
-    <div className="pt-8 pl-3">
+      <div className="flex justify-between pt-8 pl-3">
+    <Link href="/shop/trees" className="underline  decoration-solid"><i class='bx bx-left-arrow-alt'></i>Trees</Link>
     <Link href="/shop/fertileLand" className="underline  decoration-solid">Fertile section <i class='bx bx-right-arrow-alt'></i></Link>
     </div>
         <div className="lg:grid lg:grid-cols-4 pt-20 pb-10 fade-in ">

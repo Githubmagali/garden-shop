@@ -129,3 +129,56 @@ export const fertileShop=[
    
 
 ]
+
+export const treeShop=[
+    {
+        id:1,
+        name:"Apple tree",
+        img:"/apple-tree.jpg",
+        soldOut: true,
+        price:12.33,
+    },
+    {
+        id:2,
+        name:"Lemon tree",
+        img:"/lemon-tree.png",
+        soldOut: false,
+        price:13.33,
+    },
+    {
+        id:3,
+        name:"Avocato tree",
+        img:"/avocato-tree.png",
+        soldOut: false,
+        price:13.03,
+    },
+    {
+        id:4,
+        name:"Orange tree",
+        img:"/orange-tree.jpg",
+        soldOut: false,
+        price:12.50,
+    },
+    {
+        id:5,
+        name:"Pear tree",
+        img:"/pear-tree.jpg",
+        soldOut: false,
+        price:12.50,
+    },
+    {
+        id:6,
+        name:"Bonsai",
+        img:"/bonsai.jpg",
+        soldOut: false,
+        price:12.50,
+    },
+    {
+        id:7,
+        name:"Walnut tree",
+        img:"/walnut-tree.jpg",
+        soldOut: false,
+        price:12.50,
+    }
+  
+]

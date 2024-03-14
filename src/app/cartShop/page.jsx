@@ -1,16 +1,24 @@
 "use client"
 import { useCart } from "../context/cartProvider"
 import { useState } from "react"
+import Link from "next/link";
 
 
 function CartShop() {
 
     const { cart, totalCost, getItemQuantity, getItemTotalPrice } = useCart();
+    const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
-    return (
+    return (<>
+        <div className="pt-4 pl-3">
+            <Link href="/shop/fertileLand"
+                className="underline  decoration-solid "><i class='bx bx-left-arrow-alt'></i>Go back </Link>
+        </div>
+
         <div className="flex items-center justify-center h-screen">
+
             <div className="flex flex-col  border border-inherit  mr-10 gap-y-2">
-                <div className="grid grid-cols-4 border-b gap-x-6 text-center p-4 ">
+                <div className="grid grid-cols-4 border-b gap-x-6 text-center p-4 text-gray-600">
                     <p>Product</p>
                     <p>Price</p>
                     <p>Amount</p>
@@ -38,13 +46,23 @@ function CartShop() {
 
             <div className="grid grid-cols border border-inherit lg:w-96 lg:h-96 ">
                 <h1 className=" text-center text-xl text-gray-700 py-3">Cart total</h1>
-                <p className="text-center">Total Cost: ${totalCost}</p>
-                <p className="text-center">Shipment</p>
-                <p className="text-center">Total</p>
+                {cart.length > 0 ? (<>
+           
+                    <p  className="text-center">Products: {totalItems}</p>
+                    <p className="text-center">Shipment</p>
+             
+                   
+                </>
+
+                ) : (
+                    <></>
+                )}
+
+                <p className="text-center">Total ${totalCost}</p>
             </div>
 
         </div>
-    )
+    </>)
 }
 
 export default CartShop

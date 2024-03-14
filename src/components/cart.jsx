@@ -15,8 +15,7 @@ function NavbarCart(){
             <p>Total Cost: ${totalCost}</p>
             </div>
             <div>
-                <p>Open to cart</p>
-
+                <Link href="/cartShop">Open to cart</Link>
             </div>
 
         </div>
