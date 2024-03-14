@@ -58,7 +58,8 @@ function Navbar() {
             </div>
             </div>
            <div className="flex items-center">
-           <i className='bx bx-cart text-xl pr-2'></i>
+          
+           <Link href="/cartShop" className="pr-4"> <i className='bx bx-cart text-xl pr-2'></i></Link>
            <p className="pr-4"> {totalItems}</p>
            </div>
               

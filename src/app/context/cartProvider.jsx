@@ -28,6 +28,11 @@ export const CartProvider = ({ children }) => {
         });
     };
 
+    const getItemTotalPrice = (itemId) => {
+        const item = cart.find((cartItem) => cartItem.id === itemId);
+        return item ? (item.price * item.quantity) : 0;
+    };
+
 
 
     
@@ -58,7 +63,7 @@ export const CartProvider = ({ children }) => {
     
     return (
         <CartContext.Provider
-            value={{ cart, addToCart,removeFromCart, totalCost, getItemQuantity}}
+            value={{ cart, addToCart,removeFromCart, totalCost, getItemQuantity, getItemTotalPrice}}
         >
             {children}
         </CartContext.Provider>
