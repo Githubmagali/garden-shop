@@ -26,10 +26,13 @@ function CartShop() {
                 </div>
 
                 {cart.length > 0 ? (
-                    <div className="grid grid-cols-4 items-center text-center lg:w-96 lg:h-96 overflow-scroll" >
+                    <div className="grid grid-cols-4 items-center text-center content-cart lg:h-96 overflow-scroll pl-2" >
                         {cart.map((item, index) => (
                             <>
-                                <p>{item.name}</p>
+                            <div className="flex items-center">
+                            <img src={item.img} className="w-20 h-20 object-cover"/>
+                                <p key={index} className="pl-2" >{item.name}</p>
+                                </div>
                                 <p>${item.price}</p>
                                 <p>{getItemQuantity(item.id)}</p>
                                 <p>${getItemTotalPrice(item.id)}</p>
@@ -44,8 +47,9 @@ function CartShop() {
             </div>
 
 
-            <div className="grid grid-cols border border-inherit lg:w-96 lg:h-96 ">
-                <h1 className=" text-center text-xl text-gray-700 py-3">Cart total</h1>
+            <div className="grid grid-cols border border-inherit lg:w-56 lg:h-56 ">
+                <h1 className=" underline decoration-inherit text-center text-xl text-gray-600 py-3">Cart total</h1>
+              
                 {cart.length > 0 ? (<>
            
                     <p  className="text-center">Products: {totalItems}</p>
