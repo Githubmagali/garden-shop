@@ -32,6 +32,7 @@ function Navbar() {
       </button>
         <div className="flex gap-x-20 pt-9 pl-10 shadow shadow-lg shadow-slate-500 w-full justify-between items-center">
         <div className="flex gap-x-20">
+        <Link href="/" className="text-sm  py-2 "><i class='bx bx-leaf text-xl text-green-800'></i></Link>
             <Link href="/contact" className="text-sm  py-2 ">Contact</Link>
             <Link href="/about" className="text-sm  py-2 ">About</Link>
             <div className="relative mb-4">
