@@ -41,3 +41,31 @@ export const itemsAbout=[
     },
 
 ]
+
+export const swiperPage=[
+    {
+        id:1,
+        img:"/swiper-1.jpg",
+        text:"variety of fertilizers"
+    },
+    {
+        id:2,
+        img:"/swiper-2.jpg",
+        text:"On-line shop"
+    },
+    {
+        id:3,
+        img:"/swiper-3.jpg",
+        text:"Delivery"
+    },
+    {
+        id:4,
+        img:"/swiper-4.jpg",
+        text:"Wide variety of plants"
+    },
+    {
+        id:5,
+        img:"/swiper-5.jpg",
+        text:"Daily news"
+    }
+]

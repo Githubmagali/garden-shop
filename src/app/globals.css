@@ -26,6 +26,7 @@
   
   }
 
-  .content-cart{
-    width: 700px;
-  }
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
+
