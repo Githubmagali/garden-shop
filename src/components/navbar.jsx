@@ -35,6 +35,7 @@ function Navbar() {
         <Link href="/" className="text-sm  py-2 "><i class='bx bx-leaf text-xl text-green-800'></i></Link>
             <Link href="/contact" className="text-sm  py-2 ">Contact</Link>
             <Link href="/about" className="text-sm  py-2 ">About</Link>
+            <Link href="/fertilizer" className="text-sm  py-2 ">Fertilizer</Link>
             <div className="relative mb-4">
                 <select
                     className={`w-full cursor-pointer py-2 text-sm placeholder:text-gray-500 ${isFakeDark ? 'fake-dark-mode' : ''}`}

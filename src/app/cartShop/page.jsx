@@ -1,6 +1,5 @@
 "use client"
 import { useCart } from "../context/cartProvider"
-import { useState } from "react"
 import Link from "next/link";
 
 
