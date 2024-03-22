@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
 import { fertileShop} from "@/assets/shop"
+import Link from "next/link";
 
 export default function FertilizerId({params}){
     const [fertilizer, setFertilizer] = useState(null);
@@ -24,7 +25,6 @@ export default function FertilizerId({params}){
                 <p className="pt-10 text-gray-500 text-center">{fertilizer.description}</p>
                 </div>
          
-
         </div>
     )
 }
